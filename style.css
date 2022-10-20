@@ -1,75 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.header-index nav{
-    background-color: white;
-    display: flex;
-    height: 50px;
-    justify-content: space-between;
-
-}
-.header-index {
-    background-image: url(index/main.png);
-    height: 299px;
-    margin: 0px;
-    
+    font-family:Arial, Helvetica, sans-serif;
 }
 a {
     text-decoration: none;
     color: grey;
-    margin-left: 1em;
 }
-
 a:hover {
     text-decoration: none;
     color: black;
-    margin-left: 1em;
 }
-.navigation {
+
+
+.banniere {
+    background-image: url(index/main.png);
+    height: 299px;
+    margin: 0px;
+}
+.banniere h1 {
+    text-align: center;
+    color: rgb(224, 209, 189);
+    font-size: 3em;
+    padding-top: 1em;
+    
+}
+.banniere nav{
+    background-color: white;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+}
+.menu {
     display: flex;  
     align-items: center;
+}
+.menu a {
+    margin : 3em;
 }
 .social-media {
     display: flex;
     align-items: center;
+    margin-right: 2em;
 }
 
-.menu-article {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    
-}
 
-.sidebar {
-    display: flex;
-    width: 250px;
-    background-color: #f8f6f6;
-    padding: 10px;
-    flex-direction: column;
-}
+
 
 main {
     display: flex;
 }
-
-article img {
+.main-index {
+    display: inline;
+    width: 100%;
+}
+.main-index img {
     float: left;
     position: center;
     margin-right: 9px;
+    margin-bottom: 5%;
 }
-
-
-article {
-    margin: 30px;
+.main-index article {
+    clear : both;
+    width : 80%;
+    margin: 5% 10%;
 }
-
-.publication {
-    font-weight: normal;
+.main-index article p:first-of-type {
     color: grey;
 }
-.day {
-    font-size: 1.3em;
-    font-weight: bold;
+
+.sidebar {
+    box-sizing: border-box;
+    width: 250px;
+    background-color: #f8f6f6;
+    padding: 20px;
+}
+.sidebar a {
+    display: block;
+    margin: 0.5em;
 }
