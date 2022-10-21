@@ -15,21 +15,23 @@ a:hover {
 }
 
 
-.banniere {
+/* Page d'index */
+
+.banniere-index {
     background-image: url(index/main.png);
     background-position: center;
     background-size: cover;
     height: 40vh;
     margin: 0px;
 }
-.banniere h1 {
+.banniere-index h1 {
     text-align: center;
     color: rgb(224, 221, 216);
     font-size: 3em;
     padding-top: 1em;
     
 }
-.banniere nav{
+.banniere-index nav{
     background-color: white;
     display: flex;
     height: 50px;
@@ -48,7 +50,6 @@ a:hover {
     margin-right: 2em;
     margin-top: 2px;
 }
-
 
 
 
@@ -82,4 +83,40 @@ main {
 .sidebar a {
     display: block;
     margin: 0.5em;
+}
+
+
+/* Articles */
+.banniere-article {
+    background-color: rgb(245, 238, 215);
+    background: linear-gradient(#F5EED7, #FFFFFF );
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+}
+.banniere-article p:first-of-type {
+    margin: 5px;
+    font-weight:bold ;
+    font-size: 2em;
+    color: grey;
+}
+.menu-article a {
+    margin : 1em;
+}
+.menu-article {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+    margin-top: 2px;
+}
+
+
+.main-article {
+    padding : 3%;
+    width: 100%;
+}
+.main-article img {
+    float: left;
+    position: center;
+    margin-right: 9px;
 }
