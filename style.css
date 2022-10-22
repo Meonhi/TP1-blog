@@ -23,8 +23,9 @@ h2 {
 .banniere-index {
     background-image: url(index/main.png);
     background-position: center;
+    background-clip: border-box;
     background-size: cover;
-    height: 40vh;
+    height: 38vh;
     margin: 0px;
 }
 .banniere-index h1 {
@@ -37,7 +38,7 @@ h2 {
 .banniere-index nav{
     background: linear-gradient(#F5EED7, #FFFFFF );
     display: flex;
-    height: 50px;
+    height: 2.7em;
     justify-content: space-between;
 }
 .menu {
@@ -91,13 +92,13 @@ main {
 
 /* Articles */
 .banniere-article {
-    background-color: rgb(245, 238, 215);
     background: linear-gradient(#F5EED7, #FFFFFF );
     display: flex;
-    height: 50px;
+    height: 2.7em;
     justify-content: space-between;
+    position: sticky;
 }
-.banniere-article p:first-of-type {
+.banniere-article h1 {
     margin: 5px;
     font-weight:bold ;
     font-size: 2em;
