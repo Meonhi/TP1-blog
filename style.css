@@ -26,6 +26,7 @@ body {
 a {
     text-decoration: none;
     color: #B0947C;
+    transition: color, 1s;
 }
 a:hover {
     text-decoration: none;
@@ -72,6 +73,9 @@ h2 {
     margin-right: 2em;
     margin-top: 2px;
 }
+.social-media img:hover {
+    opacity: 0.5;
+}
 
 
 
@@ -86,6 +90,9 @@ main {
     float: left;
     position: center;
     margin-right: 9px;
+}
+.main-index img:hover {
+    transform: scale(1.05)
 }
 .main-index article {
     clear : both;
@@ -171,4 +178,38 @@ main {
     clear: both;
     padding: 1.5rem 0;
     text-align: center;
+}
+
+@media only screen and (max-width:770px) {
+    main {
+        display: inline;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .banniere-index h1 {
+        font-size: 2.3em;
+    }
+    .partie1 img,.partie2 img {
+        height: 12em;
+    }
+    .main-article {
+        width: 90%;
+    }
+}
+
+    @media only screen and (max-width:570px) {
+    .main-index img {
+        display: inline;
+        width: 100%;
+        margin: 9px; 
+    }
+    .menu {
+        float: left;
+    }
+    .menu a {
+        margin: 1em;
+        font-size: 1.1em;
+    }    
+
 }
