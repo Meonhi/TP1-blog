@@ -40,7 +40,7 @@ h2 {
 /* Page d'index */
 
 .banniere-index {
-    background-image: url(index/main.png);
+    background-image: url(img/index/main.png);
     background-position: center;
     background-clip: border-box;
     background-size: cover;
