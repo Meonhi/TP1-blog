@@ -44,7 +44,7 @@ h2 {
     background-position: center;
     background-clip: border-box;
     background-size: cover;
-    height: 38vh;
+    height: 244px;
     margin: 0px;
 }
 .banniere-index h1 {
@@ -61,8 +61,18 @@ h2 {
     justify-content: space-between;
 }
 .menu {
+    padding-left: 2em;
     display: flex;  
     align-items: center;
+}
+.banniere-index {
+    position: relative;
+}
+.logo {
+    position: relative;
+    top:1em;
+    transition: transform 2s;
+    transform: translateX(600px);
 }
 .menu a {
     margin : 3em;
@@ -212,4 +222,14 @@ main {
         font-size: 1.1em;
     }    
 
+}
+
+.nemocatch {
+    text-align: center;
+}
+.nemocatch p {
+    margin: 1rem;
+}
+.nemocatch h2 {
+    margin: 1rem;
 }
