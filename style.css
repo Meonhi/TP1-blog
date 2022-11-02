@@ -37,6 +37,36 @@ h2 {
     color: #82633A;
 }
 
+@media only screen and (max-width:770px) {
+    main {
+        display: inline;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .partie1 img,.partie2 img {
+        height: 12em;
+    }
+    .main-article {
+        width: 90%;
+    }
+}
+ @media only screen and (max-width:570px) {
+    .main-index img {
+        display: inline;
+        width: 100%;
+        margin: 9px; 
+    }
+    .menu {
+        float: left;
+    }
+    .menu a {
+        margin: 1em;
+        font-size: 1.1em;
+    }    
+
+}
+
 /* Page d'index */
 
 .banniere-index {
@@ -68,20 +98,6 @@ h2 {
 .banniere-index {
     position: relative;
 }
-.logo {
-    position: relative;
-    top:1em;
-    animation: slide 3s forwards;
-}
-
-@keyframes slide {
-    from {
-        transform: translateX(0px);
-    }
-    to {
-        transform: translateX(50vw);
-    }
-}
 
 .menu a {
     margin : 3em;
@@ -94,6 +110,20 @@ h2 {
 }
 .social-media img:hover {
     opacity: 0.5;
+}
+
+.logo {
+    position: relative;
+    top:1em;
+    animation: slide 3s forwards;
+}
+@keyframes slide {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(50vw);
+    }
 }
 
 
@@ -164,7 +194,6 @@ main {
 }
 .main-article {
     padding : 3%;
-    width: 100%;
 }
 
 .partie1 h2 {
@@ -199,37 +228,8 @@ main {
     text-align: center;
 }
 
-@media only screen and (max-width:770px) {
-    main {
-        display: inline;
-    }
-    .sidebar {
-        width: 100%;
-    }
-    .partie1 img,.partie2 img {
-        height: 12em;
-    }
-    .main-article {
-        width: 90%;
-    }
-}
 
-    @media only screen and (max-width:570px) {
-    .main-index img {
-        display: inline;
-        width: 100%;
-        margin: 9px; 
-    }
-    .menu {
-        float: left;
-    }
-    .menu a {
-        margin: 1em;
-        font-size: 1.1em;
-    }    
-
-}
-
+/* Attraper Nemo */
 .nemocatch {
     text-align: center;
 }
@@ -238,4 +238,38 @@ main {
 }
 .nemocatch h2 {
     margin: 1rem;
+}
+
+
+/* Contact */
+form {
+    text-align: center;
+    }
+
+fieldset {
+    display: inline;
+    text-align: left;
+}
+label {
+    text-align: left;
+    margin: 3px;
+}
+.social-media-contact {
+    text-align: center;
+    margin-right: 2em;
+    margin-top: 2px;
+}
+.social-media-contact img:hover {
+    opacity: 0.5;
+}
+form button {
+    margin-bottom:3px;
+    margin-left: 3px;
+}
+
+
+
+.back-galerie {
+    text-align:right;
+    margin: 4px;
 }
